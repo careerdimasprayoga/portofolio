@@ -66,12 +66,12 @@ header #custom-navbar {
 header .nav-item a{
   color: black !important;
 }
-/* header .nav-item a:hover {
+header .nav-item a:hover {
   color: white !Important;
-} */
+}
 header .nav-item:hover {
   border-radius: 5px;
-  background-color: yellow !important;
+  background-color: #292826 !important;
 }
 .navActive {
   background-color: purple;
