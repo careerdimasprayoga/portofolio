@@ -66,12 +66,12 @@ header #custom-navbar {
 header .nav-item a{
   color: black !important;
 }
-header .nav-item a:hover {
+/* header .nav-item a:hover {
   color: white !Important;
-}
+} */
 header .nav-item:hover {
   border-radius: 5px;
-  background-color: rgb(141, 0, 141) !important;
+  background-color: yellow !important;
 }
 .navActive {
   background-color: purple;
@@ -79,7 +79,7 @@ header .nav-item:hover {
 }
 .banner {
   min-height: 100vh;
-  background-image: url(../assets/banner2.jpg);
+  background-image: url(../assets/images/banner2.jpg);
   background-size: cover;
 }
 #about {
