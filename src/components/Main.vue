@@ -13,7 +13,6 @@
             <b-navbar-nav>
               <b-nav-item href="#banner" class="mr-3">Home</b-nav-item>
               <b-nav-item href="#about" class="mr-3 active">About</b-nav-item>
-              <b-nav-item href="#" class="mr-3">Education</b-nav-item>
               <b-nav-item href="#" class="mr-3">Skills</b-nav-item>
               <b-nav-item href="#" class="mr-3">Project</b-nav-item>
               <b-nav-item href="#" class="mr-3">Contact</b-nav-item>
@@ -51,19 +50,19 @@
         <b-row class="text-center" align-v="center" style="height: 300px;">
           <b-col xl="10" offset="1">
             <h3 class="mb-4">About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quidem amet libero, molestiae quas ea quos eos deleniti reiciendis nemo velit repellat maiores porro obcaecati vel eius, nulla inventore. Blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea, amet modi quam maiores perferendis sapiente labore sint exercitationem alias illo beatae ipsa quidem officia accusamus velit animi est praesentium.</p>
+            <p>I am Fullstack Developer Javascript. I love create new system that help, usefull and easier people. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus corporis tenetur rem est quas quisquam id dolore ex quo incidunt expedita numquam ratione amet sunt nemo, tempora cum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis repellat quaerat beatae totam expedita, ad nihil perspiciatis odit nulla sequi soluta ratione recusandae possimus at quis earum magnam eos?</p>
           </b-col>
         </b-row>
       </b-container>
     </section>
-    <section class="banner" id="banner">
-      <div class="parallax">
+    <section class="skills" id="skills">
+      <div class="parallax2">
         <b-container>
           <b-row class="vh-100 text-center" align-v="center">
             <b-col xl="12">
-              <b-img src="https://picsum.photos/200/200/?image=1025" rounded="circle" alt="Circle image" class="mb-4"></b-img>
-              <h1 class="mb-4" style="color: black; font-weight: bold;">Dimas Prayoga</h1>
-              <b-button class="main-navigation-button" variant="primary">Read More</b-button>
+              <div class="asem" style="width: 100%; height: 600px; background-color: white; border-radius: 10px;">
+                <h3>Skills</h3>
+              </div>
             </b-col>
           </b-row>
         </b-container>
@@ -81,7 +80,7 @@ function navScrollFunction () {
     document.getElementById('custom-navbar').style.padding = '10px 60px 10px 60px'
     document.getElementById('custom-navbar').classList.add('navscroll')
   } else {
-    document.getElementById('custom-navbar').style.padding = '25px 60px 10px 60px'
+    document.getElementById('custom-navbar').style.padding = '20px 60px 10px 60px'
     document.getElementById('custom-navbar').classList.remove('navscroll')
   }
 }
@@ -93,6 +92,14 @@ function navScrollFunction () {
 
 .parallax {
   background-image: url(../assets/images/banner2.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  background-image: url(../assets/images/banner.jpg);
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -111,9 +118,6 @@ header #custom-navbar {
 header .nav-item a{
   color: black !important;
 }
-/* header .nav-item a:hover {
-  color: white !Important;
-} */
 header .nav-item:hover {
   border-radius: 15px;
   background-color: #292826 !important;
@@ -128,7 +132,7 @@ header .nav-item:hover {
 .nav-item > a:hover {
   color: white !important;
 }
-.banner {
+.banner, .skills {
   min-height: 100vh;
 }
 #about {
